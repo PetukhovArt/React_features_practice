@@ -8,13 +8,13 @@ import friend from './friend.png'
 
 /*
 * 1 - описать тип MessageType  ГОТОВО
-* 2 - описать тип MessagePropsType в файле Message.tsx
-* 3 - в файле Message.tsx отобразить приходящие данные
-* 4 - выполнить пункты 2, 3 в файле FriendMessage.tsx
-* 5 - сделать стили в соответствии с дизайном
+* 2 - описать тип MessagePropsType в файле Message.tsx ГОТОВО
+* 3 - в файле Message.tsx отобразить приходящие данные ГОТОВО
+* 4 - выполнить пункты 2, 3 в файле FriendMessage.tsx ГОТОВО
+* 5 - сделать стили в соответствии с дизайном ГОТОВО
 * */
 
-// нужно создать правильный тип вместо any
+
 export type MessageType = {
     id: number
     user: UserType
@@ -29,7 +29,6 @@ type MesType = {
     text: string
     time: string
 }
-// структуру объекта не менять
 export const message0: MessageType = {
     id: 0,
     user: {
