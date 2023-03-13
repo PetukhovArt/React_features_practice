@@ -1,11 +1,17 @@
 .input:focus {
-
 }
 
 .input {
-    width: 372px;
+    width: 276px;
     height: 36px;
     border: 1px solid #D1D1D1;
+    border-radius: 5px;
+    padding: 8px 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .inputWrapper {

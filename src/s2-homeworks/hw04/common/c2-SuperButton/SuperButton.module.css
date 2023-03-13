@@ -25,14 +25,21 @@
 
 .secondary {
     background: none;
-    width: 176px;
+    width: 129px;
     height: 30px;
     border: 1px solid #0066CC;
     color: #0066CC;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .default {
     background: #0066CC;
+    width: 116px;
+    height: 30px;
 }
 
 .red {
