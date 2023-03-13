@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/TS-practice/static/css/main.cec1b6c1.css",
-    "main.js": "/TS-practice/static/js/main.ccfa9552.js",
+    "main.css": "/TS-practice/static/css/main.2bea6776.css",
+    "main.js": "/TS-practice/static/js/main.27e2b975.js",
     "static/js/787.66cb4309.chunk.js": "/TS-practice/static/js/787.66cb4309.chunk.js",
     "static/media/friend.png": "/TS-practice/static/media/friend.842696c7089d1258046c.png",
     "static/media/avatar.png": "/TS-practice/static/media/avatar.d947cb9d0d13765666b6.png",
     "static/media/404.svg": "/TS-practice/static/media/404.9ec31c0ba8d95b0480272e46af98c955.svg",
     "static/media/closeOutline.svg": "/TS-practice/static/media/closeOutline.b64ba402fac8a549bc2de97e9cf84a61.svg",
+    "static/media/editIcon.svg": "/TS-practice/static/media/editIcon.0a0cefd2190b593b4f76bb1a5afe0c1f.svg",
     "static/media/checked.svg": "/TS-practice/static/media/checked.b75ca55e8759862b4083.svg",
     "index.html": "/TS-practice/index.html",
     "static/media/burger.svg": "/TS-practice/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
-    "main.cec1b6c1.css.map": "/TS-practice/static/css/main.cec1b6c1.css.map",
-    "main.ccfa9552.js.map": "/TS-practice/static/js/main.ccfa9552.js.map",
+    "main.2bea6776.css.map": "/TS-practice/static/css/main.2bea6776.css.map",
+    "main.27e2b975.js.map": "/TS-practice/static/js/main.27e2b975.js.map",
     "787.66cb4309.chunk.js.map": "/TS-practice/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cec1b6c1.css",
-    "static/js/main.ccfa9552.js"
+    "static/css/main.2bea6776.css",
+    "static/js/main.27e2b975.js"
   ]
 }
