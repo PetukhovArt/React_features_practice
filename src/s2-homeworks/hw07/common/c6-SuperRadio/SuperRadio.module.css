@@ -1,15 +1,61 @@
 .radio {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    outline: none;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.radio:hover {
+    border: 1px solid black;
+}
+.radio:checked {
+    background: green;
+    transition: 0.5s;
 }
 
-.radio::before {
-}
-
-
-.radio:checked::before {
-}
 
 .label {
+    cursor: pointer;
+    display: flex;
+    gap: 11px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
 }
 
 .options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+
+/*.radio[type='radio']::before {*/
+/*    width: 15px;*/
+/*    height: 15px;*/
+/*    border-radius: 15px;*/
+/*    position: relative;*/
+/*    background-color: white;*/
+/*    content: '';*/
+/*    display: inline-block;*/
+/*    visibility: visible;*/
+/*    border: 3px solid gray;*/
+/*}*/
+
+/*.radio[type='radio']:checked::before {*/
+/*    width: 15px;*/
+/*    height: 15px;*/
+/*    border-radius: 15px;*/
+/*    position: relative;*/
+/*    background-color: greenyellow;*/
+/*    content: '';*/
+/*    display: inline-block;*/
+/*    visibility: visible;*/
+/*    border: 3px solid black;*/
+/*}*/
+
+
