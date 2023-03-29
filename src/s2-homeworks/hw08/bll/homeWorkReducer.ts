@@ -1,5 +1,5 @@
 import {UserType} from '../HW8'
-import {log} from 'util';
+
 
 type ActionType =
     | { type: 'sort'; payload: 'up' | 'down' }
