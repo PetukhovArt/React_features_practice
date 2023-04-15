@@ -1,3 +1,25 @@
 .loader {
-    /*свг и/или анимация*/
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.loader::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid #999;
+    border-top-color: #fff;
+    animation: loader-animation 1s ease-in-out infinite;
+}
+
+@keyframes loader-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
