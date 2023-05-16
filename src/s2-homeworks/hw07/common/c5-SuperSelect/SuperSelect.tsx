@@ -4,6 +4,7 @@ import React, {
     ChangeEvent,
 } from 'react'
 import s from './SuperSelect.module.css'
+import {debug} from 'util';
 
 type DefaultSelectPropsType = DetailedHTMLProps<
     SelectHTMLAttributes<HTMLSelectElement>,
@@ -36,7 +37,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
         : [] // map options with key
 
     const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
-        if (onChangeOption) onChangeOption(e.currentTarget.value)
+        if (onChangeOption) onChangeOption(e)
     }
 
     const finalSelectClassName = s.select + (className ? ' ' + className : '')

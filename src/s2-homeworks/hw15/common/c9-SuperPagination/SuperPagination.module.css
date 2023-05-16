@@ -1,11 +1,25 @@
 .pagination {
     display: flex;
+    align-items: center;
+    gap: 7px;
 }
 
 .text1 {
-
+}
+.text1::first-letter {
+    text-transform: capitalize;
 }
 
 .text2 {
 
+}
+.select15 {
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 2px;
+    width: 45px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }

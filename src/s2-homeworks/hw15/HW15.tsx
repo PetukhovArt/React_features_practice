@@ -5,6 +5,8 @@ import axios from 'axios'
 import SuperPagination from './common/c9-SuperPagination/SuperPagination'
 import {useSearchParams} from 'react-router-dom'
 import SuperSort from './common/c10-SuperSort/SuperSort'
+import LinearProgress from '@mui/material/LinearProgress';
+import Backdrop from '@mui/material/Backdrop';
 
 /*
 * 1 - дописать SuperPagination
@@ -51,36 +53,24 @@ const HW15 = () => {
         setLoading(true)
         getTechs(params)
             .then((res) => {
-                // делает студент
-
-                // сохранить пришедшие данные
-
-                //
+                res && setTotalCount(res.data.totalCount)
+                res && setTechs(res.data.techs)
+                setLoading(false)
             })
     }
 
     const onChangePagination = (newPage: number, newCount: number) => {
-        // делает студент
-
-        // setPage(
-        // setCount(
-
-        // sendQuery(
-        // setSearchParams(
-
-        //
+        setCount(newCount)
+        setPage(newPage)
+        sendQuery({sort: sort, page: newPage, count: newCount})
+        setSearchParams()
     }
 
     const onChangeSort = (newSort: string) => {
-        // делает студент
-
-        // setSort(
-        // setPage(1) // при сортировке сбрасывать на 1 страницу
-
-        // sendQuery(
-        // setSearchParams(
-
-        //
+        setSort(newSort)
+        setPage(1) // при сортировке сбрасывать на 1 страницу
+        sendQuery({sort: newSort, page: page, count: count})
+        setSearchParams()
     }
 
     useEffect(() => {
@@ -105,9 +95,33 @@ const HW15 = () => {
     return (
         <div id={'hw15'}>
             <div className={s2.hwTitle}>Homework #15</div>
-
+            <div className={s.loadingWrapper}>
             <div className={s2.hw}>
-                {idLoading && <div id={'hw15-loading'} className={s.loading}>Loading...</div>}
+                    {idLoading && <div id={'hw15-loading'} className={s.loading}>
+                        <Backdrop open={idLoading}
+                                  sx={{
+                                      color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1,
+                                      position: 'absolute',
+                                      top: 0,
+                                      left: 0,
+                                      width: '100%',
+                                      height: '100%',
+                                  }}
+                        >
+                            <LinearProgress value={20}
+                                            sx={{
+                                                height: 10,
+                                                width: '50vh',
+                                                borderRadius: 5,
+                                                backgroundColor: 'rgba(0, 0, 0, 0.1)',
+                                                '& .MuiLinearProgress-bar': {
+                                                    borderRadius: 5,
+                                                    backgroundColor: '#1a90ff',
+                                                },
+                                            }}
+                            />
+                        </Backdrop>
+                    </div>}
 
                 <SuperPagination
                     page={page}
@@ -118,17 +132,18 @@ const HW15 = () => {
 
                 <div className={s.rowHeader}>
                     <div className={s.techHeader}>
-                        tech
+                        Tech
                         <SuperSort sort={sort} value={'tech'} onChange={onChangeSort}/>
                     </div>
 
                     <div className={s.developerHeader}>
-                        developer
+                        <div>Developer</div>
                         <SuperSort sort={sort} value={'developer'} onChange={onChangeSort}/>
                     </div>
                 </div>
 
                 {mappedTechs}
+            </div>
             </div>
         </div>
     )
