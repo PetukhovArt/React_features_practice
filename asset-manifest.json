@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TS-practice/static/css/main.09bd6ccd.css",
-    "main.js": "/TS-practice/static/js/main.7bc2fece.js",
+    "main.css": "/TS-practice/static/css/main.ca0d37cf.css",
+    "main.js": "/TS-practice/static/js/main.503f00d3.js",
     "static/js/787.66cb4309.chunk.js": "/TS-practice/static/js/787.66cb4309.chunk.js",
     "static/media/friend.png": "/TS-practice/static/media/friend.842696c7089d1258046c.png",
     "static/media/avatar.png": "/TS-practice/static/media/avatar.d947cb9d0d13765666b6.png",
@@ -15,12 +15,12 @@
     "static/media/checked.svg": "/TS-practice/static/media/checked.b75ca55e8759862b4083.svg",
     "index.html": "/TS-practice/index.html",
     "static/media/burger.svg": "/TS-practice/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
-    "main.09bd6ccd.css.map": "/TS-practice/static/css/main.09bd6ccd.css.map",
-    "main.7bc2fece.js.map": "/TS-practice/static/js/main.7bc2fece.js.map",
+    "main.ca0d37cf.css.map": "/TS-practice/static/css/main.ca0d37cf.css.map",
+    "main.503f00d3.js.map": "/TS-practice/static/js/main.503f00d3.js.map",
     "787.66cb4309.chunk.js.map": "/TS-practice/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.09bd6ccd.css",
-    "static/js/main.7bc2fece.js"
+    "static/css/main.ca0d37cf.css",
+    "static/js/main.503f00d3.js"
   ]
 }
